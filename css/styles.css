@@ -169,10 +169,10 @@ p {
 }
 
 .services .content .servicesBx {
+  width: 340px;
   padding: 40px 20px;
   background: #222;
   color: white;
-  max-width: 340px;
   margin: 20px;
   text-align: center;
   transition: 0.5s;
@@ -482,6 +482,12 @@ p {
 @media (max-width: 767px) {
   section {
     padding: 40px;
+  }
+
+  .services .content .servicesBx {
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px 40px;
   }
 
   .contactInfo .box {
