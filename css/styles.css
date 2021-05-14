@@ -596,6 +596,10 @@ p {
   .content {
     flex-direction: column;
   }
+
+  .work .content {
+    flex-direction: row;
+  }
   
   p {
     margin-bottom: 10px;
@@ -607,7 +611,7 @@ p {
   }
 
   .work .content .workBx {
-    width: 100%;
+    width: 50%;
     padding: 10px;
   }
 
@@ -646,6 +650,10 @@ p {
     padding: 40px;
   }
 
+  .content {
+    flex-direction: column;
+  }
+
   .btn-cv {
     width: 100%;
     padding: 10px;
@@ -680,6 +688,11 @@ p {
     width: 100%;
     margin: 20px 0;
     padding: 20px 40px;
+  }
+
+  .work .content .workBx {
+    width: 100%;
+    padding: 10px;
   }
 
   .contactInfo .box {
