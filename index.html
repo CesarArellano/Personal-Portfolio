@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/utils.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -18,12 +19,12 @@
       <li><a href="#about" onclick="toggleMenu();">About</a></li>
       <li><a href="#services" onclick="toggleMenu();">Services</a></li>
       <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-      <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
+      <li><a href="#certifications" onclick="toggleMenu();">Certifications</a></li>
       <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
     </ul>
   </header>
   <section class="banner" id="home">
-    <div class="textBx">
+    <div class="textBx animate__animated animate__fadeInLeft">
       <h2>Hello, I'm <br><span>César Arellano</span></h2>
       <h3>I'm a Front-End Web and Mobile Developer</h3>
       <a href="#about" class="btn hoverable">About Me</a>
@@ -51,7 +52,7 @@
         <br>
           In my free time, I like to learn new things by myself in diverse platforms. Besides I like to play the piano and the synthesizer and I really enjoy taking photos of nature.
         </p>
-        <a class="cv" href="documents/cv.pdf">Download my CV</a>
+        <a class="btn-cv hoverable" href="documents/cv.pdf" target="_blank">Download my CV</a>
         
       </div>
       <div class="w50">
@@ -62,34 +63,35 @@
   <section class="services" id="services">
     <div class="heading white">
       <h2>My services</h2>
-      <div class="content">
-        <div class="servicesBx">
-          <img src="images/icon1.png" alt="Icono 1">
-          <h2>Web Design</h2>
-          <p>I have used diferent CSS Frameworks such as Bootstrap and Materialize to design many websites, but also I know how to use native CSS to layout any website based on the requirements.</p>
-        </div>
-        <div class="servicesBx2">
-          <img src="images/icon2.png" alt="Icono 1">
-          <h2>Web Development</h2>
-          <p>I have experience in many languages, for example JS, Angular, JQuery, PHP and MySQL. In this area, I have done many projects such as Clone Instagram, Basic Ecommerce and Evaluation Platform.</p> 
-        </div>
-        <div class="servicesBx3">
-          <img src="images/icon3.png" alt="Icono 1">
-          <h2>Mobile Apps</h2>
-          <p>I'm currently developing mobile apps with Flutter, in this Framework I have done interesting apps like QR Reader, Cinema Listings and News Reader, using Firebase, Google Maps's API and TheMovieDB.</p> 
-        </div>
-        <div class="servicesBx4">
-          <img src="images/icon6.png" alt="Icono 1">
-          <h2>Video Editing</h2>
-          <p>I have done a lot of personal and academic video projects with Sony Vegas Pro, adding visual and audio effects professionally. At the same time I use Adobe Photoshop and Adobe Audition to improve the video quality</p> 
-        </div>
+    </div>
+    <div class="content">
+      <div class="servicesBx">
+        <img src="images/icon1.png" alt="Icono 1">
+        <h2>Web Design</h2>
+        <p>I have used diferent CSS Frameworks such as Bootstrap and Materialize to design many websites, but also I know how to use native CSS to layout any website based on the requirements.</p>
+      </div>
+      <div class="servicesBx2">
+        <img src="images/icon2.png" alt="Icono 1">
+        <h2>Web Development</h2>
+        <p>I have experience in many technologies, for example JS, Angular, JQuery, PHP and MySQL. In this area, I have done many projects such as Clone Instagram, Basic Ecommerce and Evaluation Platform.</p> 
+      </div>
+      <div class="servicesBx3">
+        <img src="images/icon3.png" alt="Icono 1">
+        <h2>Mobile Apps</h2>
+        <p>I'm currently developing mobile apps with Flutter, in this Framework I have done interesting apps like QR Reader, Cinema Listings and News Reader, using Firebase, Google Maps's API and TheMovieDB.</p> 
+      </div>
+      <div class="servicesBx4">
+        <img src="images/icon6.png" alt="Icono 1">
+        <h2>Video Editing</h2>
+        <p>I have done a lot of personal and academic video projects with Sony Vegas Pro, adding visual and audio effects professionally. At the same time I use Adobe Photoshop and Adobe Audition to improve the video quality</p> 
       </div>
     </div>
   </section>
   <section class="work" id="work">
     <div class="heading">
       <h2>Work</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At consectetur officia sequi neque quaerat porro exercitationem quae. Sit omnis maxime, atque sapiente commodi fugiat qui, unde, ipsa hic consequatur aspernatur!</p>
+      <p>I'm a productive and friendly person, I love meeting new people with different perspectives, this has helped me to be a better human being.</p>
+      <p>Below I show some of the most relevant projects that I have achieved thanks to the efforts of the people I have met and have provided their feedback.</p>
     </div>
     <div class="content">
       <div class="workBx">
@@ -104,31 +106,36 @@
       <div class="workBx">
         <img src="images/product4.jpg" class="hoverable">
       </div>
-      <div class="heading">
-        <a href="https://github.com/CesarArellano?tab=repositories" class="btn">View More</a>
+      <div class="heading-btn">
+        <a href="https://github.com/CesarArellano?tab=repositories" class="btn-view hoverable">View More</a>
       </div>
     </div>
   </section>
-  <section class="testimonial" id="testimonial">
+  <section class="certifications" id="certifications">
     <div class="heading">
-      <h2>Testimonial</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ex atque ratione, fugit sequi, vitae doloremque officiis nihil labore consectetur aspernatur iusto dignissimos harum numquam architecto illo adipisci qui sed?</p>
+      <h2>Licenses and certifications</h2>
     </div>
     <div class="content">
-      <div class="testimonialBx">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe quaerat reprehenderit incidunt cum nisi similique nobis asperiores ut deserunt modi nemo numquam expedita fuga, quas necessitatibus aperiam quisquam nam.</p>
-        <h3>Someone Famous<br><span>Creative Designer</span></h3>
+      <div class="certificationsBx hoverable">
+        <p>Flutter: Tu guía completa de desarrollo para IOS y Android | Udemy</p>
+        <p>Expedition date: May 2021</p>
+        <p>Certificate ID: UC-2a6df4a6-927c-491d-a292-40da182669eb</p>
+        <a href="https://www.udemy.com/certificate/UC-2a6df4a6-927c-491d-a292-40da182669eb/" target="_blank">See certificate</a>
+        <h3>Fernando Herrera<br><span>FullStack Developer</span></h3>
       </div>
-      <div class="testimonialBx">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe quaerat reprehenderit incidunt cum nisi similique nobis asperiores ut deserunt modi nemo numquam expedita fuga, quas necessitatibus aperiam quisquam nam.</p>
-        <h3>Someone Famous<br><span>Creative Designer</span></h3>
+      <div class="certificationsBx hoverable">
+        <p>JavaScript Moderno: Guía para dominar el lenguaje  | Udemy</p>
+        <p>Expedition date: April 2021</p>
+        <p>Certificate ID: UC-4b8dfeeb-5693-4fb0-a409-fdad85612ab0</p>
+        <a href="https://www.udemy.com/certificate/UC-4b8dfeeb-5693-4fb0-a409-fdad85612ab0/" target="_blank">See certificate</a>
+        <h3>Fernando Herrera<br><span>FullStack Developer</span></h3>
       </div>
     </div>
   </section>
   <section class="contact" id="contact">
     <div class="heading white">
       <h2>Contact Me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis provident adipisci dicta rerum? Earum voluptatibus facilis nobis itaque quaerat. Quidem dignissimos provident tenetur tempore unde aperiam doloremque possimus vel.</p>
+      <p>In this section, you can contact me. I will be happy to chat with you </p>
     </div>
     <div class="content">
       <div class="contactInfo">
@@ -159,6 +166,17 @@
             <div class="text">
               <h3>Email</h3>
               <p>cesarmauricio.arellano@gmail.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/in/c%C3%A9sar-mauricio-arellano-vel%C3%A1squez-7a611a195/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="social-icon">
+              <a href="https://github.com/CesarArellano" target="_blank"><i class="fab fa-github"></i></a>              
+            </div>
+            <div class="social-icon">
+              <a href="https://twitter.com/UnDiaConRay" target="_blank"><i class="fab fa-twitter"></i></a>              
             </div>
           </div>
         </div>

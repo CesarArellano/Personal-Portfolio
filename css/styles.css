@@ -47,20 +47,6 @@ section {
   text-shadow: 1.5px 2.5px 5px #000000;
 }
 
-.btn {
-  position: relative;
-  background: #2196f3;
-  display: inline-block;
-  color: white;
-  margin-top: 20px;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -116,6 +102,11 @@ header.sticky ul li a {
   color: black;
 }
 
+.heading-btn {
+  width: 100%;
+  text-align: center;
+}
+
 .heading {
   width: 100%;
   text-align: center;
@@ -154,9 +145,49 @@ p {
   text-align: justify;
 }
 
-a.cv {
-  margin-top: 10px;
-  font-size: 20px;
+.btn {
+  position: relative;
+  background: #2196f3;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.btn-cv {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 5px;
+  background: #5538a5;  
+  color: white;
+  margin: 30px 25%;
+  padding: 15px 0;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.btn-view {
+  position: relative;
+  border-radius: 5px;
+  background: #ff0055;
+  display: inline-block;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .about .content p {
@@ -175,7 +206,6 @@ a.cv {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 20px;
 }
 
 .services .content .servicesBx {
@@ -270,7 +300,7 @@ a.cv {
 }
 
 .work .content .workBx {
-  width: 50%;
+  width: 25%;
   padding: 20px;
 }
 
@@ -279,31 +309,45 @@ a.cv {
   padding: 20px;
 }
 
-.testimonial {
+.work .heading p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.work .heading {
+  margin-bottom: 0;
+}
+
+.certifications {
   background: #f0f0f0;
 }
 
-.testimonial .content {
+.certifications .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.testimonial .content .testimonialBx {
+.certifications .content .certificationsBx {
   max-width: calc(50% - 40px);
   padding: 60px 40px;
   margin: 20px;
   background-color: #2196f3;
 }
 
-.testimonial .content .testimonialBx p {
+.certifications .content .certificationsBx p {
   color: white;
   font-style: italic;
   font-size: 16px;
   font-weight: 300;
 }
 
-.testimonial .content .testimonialBx h3 {
+.certifications .content .certificationsBx a {
+  color: white;
+}
+
+.certifications .content .certificationsBx h3 {
   margin-top: 40px;
   text-align: end;
   color: white;
@@ -312,7 +356,7 @@ a.cv {
   line-height: 1em;
 }
 
-.testimonial .content .testimonialBx h3 span {
+.certifications .content .certificationsBx h3 span {
   font-size: 14px;
   font-weight: 400;
 }
@@ -367,10 +411,12 @@ a.cv {
 
 .formBx form input[type="submit"] {
   max-width: 100px;
-  background: #2196f3;
+  border-radius: 5px;
+  background: #008cff;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 .contactInfo {
@@ -416,6 +462,27 @@ a.cv {
 .copyright p {
   text-align: center;
   vertical-align: middle;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.social-icon i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: white;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.social-icon:hover i {
+  background-color: #2196f3;
 }
 
 /* Responsive */
@@ -478,7 +545,7 @@ a.cv {
   }
 
   section {
-    padding: 75px auto;
+    padding: 25px auto;
   }
 
   .banner {
@@ -504,8 +571,8 @@ a.cv {
   }
 
   .heading h2 {
-    font-size: 24px;    
-    margin-bottom: 10px;
+    font-size: 28px;    
+    margin-bottom: 15px;
   }
 
   .contentBx h3 {
@@ -517,7 +584,7 @@ a.cv {
   }
   
   p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .img {
@@ -530,13 +597,18 @@ a.cv {
     padding: 10px;
   }
 
-  .testimonial .content .testimonialBx {
+  .work .heading p {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .certifications .content .certificationsBx {
     max-width: calc(100% - 20px);
     padding: 40px 20px;
     margin: 10px;
   }
   
-  .testimonial .content .testimonialBx h3 {
+  .certifications .content .certificationsBx h3 {
     margin-top: 20px;
   }
 
@@ -552,6 +624,7 @@ a.cv {
   .copyright p {
     padding-top: 20px;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -559,7 +632,37 @@ a.cv {
     padding: 40px;
   }
 
+  .btn-cv {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .img {
+    margin-top: 30px;
+    margin-left: 0;  
+    width: 100%;
+  }
+
   .services .content .servicesBx {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 40px;
+  }
+
+  .services .content .servicesBx2 {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 40px;
+  }
+
+  .services .content .servicesBx3 {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 40px;
+  }
+
+  .services .content .servicesBx4 {
     width: 100%;
     margin: 20px 0;
     padding: 20px 40px;
