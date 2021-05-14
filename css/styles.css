@@ -137,7 +137,7 @@ header.sticky ul li a {
 }
 
 .contentBx h3 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
@@ -146,11 +146,21 @@ header.sticky ul li a {
 }
 
 .img {
-  width: 100%;
+  margin-left: 15%;  
+  width: 60%;
 }
 
 p {
   text-align: justify;
+}
+
+a.cv {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.about .content p {
+  font-size: 20px;
 }
 .services {
   background-color: #111;
@@ -179,7 +189,49 @@ p {
 }
 
 .services .content .servicesBx:hover {
-  background-color: #2196f3;
+  background-color: #2196F3;
+}
+
+.services .content .servicesBx2 {
+  width: 340px;
+  padding: 40px 20px;
+  background: #222;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx2:hover {
+  background-color: #EF4044;
+}
+
+.services .content .servicesBx3 {
+  width: 340px;
+  padding: 40px 20px;
+  background: #222;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx3:hover {
+  background-color: #00a816;
+}
+
+.services .content .servicesBx4 {
+  width: 340px;
+  padding: 40px 20px;
+  background: #222;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx4:hover {
+  background-color: #672bac;
 }
 
 .services .content .servicesBx img {
@@ -187,9 +239,28 @@ p {
   filter: invert(1); /* Invertir colores */
 }
 
+.services .content .servicesBx2 img {
+  max-width: 80px;
+  filter: invert(1); /* Invertir colores */
+}
+
+.services .content .servicesBx3 img {
+  max-width: 80px;
+  filter: invert(1); /* Invertir colores */
+}
+
+.services .content .servicesBx4 img {
+  max-width: 80px;
+  filter: invert(1); /* Invertir colores */
+}
+
 .services .content .servicesBx h2 {
   font-size:  20px;
   font-weight: 600px;
+}
+
+.services .content .servicesBx p {
+  margin-top: 15px;
 }
 
 .work .content {
@@ -449,6 +520,10 @@ p {
     margin-bottom: 20px;
   }
 
+  .img {
+    margin-left: 25%;
+    width: 50%;
+  }
 
   .work .content .workBx {
     width: 100%;
