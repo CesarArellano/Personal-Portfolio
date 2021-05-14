@@ -293,6 +293,20 @@ p {
   margin-top: 15px;
 }
 
+.services .content .servicesBx2 p {
+  margin-top: 15px;
+}
+
+
+.services .content .servicesBx3 p {
+  margin-top: 15px;
+}
+
+.services .content .servicesBx4 p {
+  margin-top: 15px;
+}
+
+
 .work .content {
   display: flex;
   justify-content: space-between;
