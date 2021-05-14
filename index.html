@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/utils.css">
@@ -52,11 +53,11 @@
         <br>
           In my free time, I like to learn new things by myself in diverse platforms. Besides I like to play the piano and the synthesizer and I really enjoy taking photos of nature.
         </p>
-        <a class="btn-cv hoverable" href="documents/cv.pdf" target="_blank">Download my CV</a>
+        <a class="btn-cv hoverable" href="./assets/documents/cv.pdf" target="_blank">Download my CV</a>
         
       </div>
       <div class="w50">
-        <img src="images/aboutMe.svg" alt="Imagen" class="img">
+        <img src="./assets/images/aboutMe.svg" alt="Imagen" class="img">
       </div>
     </div>
   </section>
@@ -66,22 +67,22 @@
     </div>
     <div class="content">
       <div class="servicesBx">
-        <img src="images/icon1.png" alt="Icono 1">
+        <img src="./assets/images/icon1.png" alt="Icono 1">
         <h2>Web Design</h2>
         <p>I have used diferent CSS Frameworks such as Bootstrap and Materialize to design many websites, but also I know how to use native CSS to layout any website based on the requirements.</p>
       </div>
       <div class="servicesBx2">
-        <img src="images/icon2.png" alt="Icono 1">
+        <img src="./assets/images/icon2.png" alt="Icono 1">
         <h2>Web Development</h2>
         <p>I have experience in many technologies, for example JS, Angular, JQuery, PHP and MySQL. In this area, I have done many projects such as Clone Instagram, Basic Ecommerce and Evaluation Platform.</p> 
       </div>
       <div class="servicesBx3">
-        <img src="images/icon3.png" alt="Icono 1">
+        <img src="./assets/images/icon3.png" alt="Icono 1">
         <h2>Mobile Apps</h2>
         <p>I'm currently developing mobile apps with Flutter, in this Framework I have done interesting apps like QR Reader, Cinema Listings and News Reader, using Firebase, Google Maps's API and TheMovieDB.</p> 
       </div>
       <div class="servicesBx4">
-        <img src="images/icon6.png" alt="Icono 1">
+        <img src="./assets/images/icon4.png" alt="Icono 1">
         <h2>Video Editing</h2>
         <p>I have done a lot of personal and academic video projects with Sony Vegas Pro, adding visual and audio effects professionally. At the same time I use Adobe Photoshop and Adobe Audition to improve the video quality</p> 
       </div>
@@ -95,19 +96,19 @@
     </div>
     <div class="content">
       <div class="workBx">
-        <img src="images/product1.jpg" class="hoverable">
+        <img src="./assets/images/product1.jpg" class="hoverable">
       </div>
       <div class="workBx">
-        <img src="images/product2.jpg" class="hoverable">
+        <img src="./assets/images/product2.jpg" class="hoverable">
       </div>
       <div class="workBx">
-        <img src="images/product3.jpg" class="hoverable">
+        <img src="./assets/images/product3.jpg" class="hoverable">
       </div>
       <div class="workBx">
-        <img src="images/product4.jpg" class="hoverable">
+        <img src="./assets/images/product4.jpg" class="hoverable">
       </div>
       <div class="heading-btn">
-        <a href="https://github.com/CesarArellano?tab=repositories" class="btn-view hoverable">View More</a>
+        <a href="https://github.com/CesarArellano?tab=repositories" target="_blank" class="btn-view hoverable">View More</a>
       </div>
     </div>
   </section>
@@ -182,11 +183,13 @@
         </div>
       </div>
       <div class="formBx">
-        <form>
+        <form action="https://formsubmit.co/cesarmauricio.arellano@gmail.com" method="POST">
           <h3>Message me</h3>
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Your Message"></textarea>
+          <input type="text" placeholder="Full Name" name="name" required>
+          <input type="email" placeholder="Email" name="email" required>
+          <textarea placeholder="Your Message" name="message" required></textarea>
+          <input type="hidden" name="_subject" value="New Contact Me from Portfolio">
+          <input type="hidden" name="_next" value="https://cesararellano.github.io/Personal-Portfolio/thanks.html">
           <input type="submit" value="Send">
         </form>
       </div>
