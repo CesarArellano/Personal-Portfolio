@@ -1,6 +1,6 @@
 @font-face {
   font-family: Poppins;
-  src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+  src: url(../assets/fonts/Poppins-Light.ttf);
 }
 
 * {
@@ -19,7 +19,8 @@ section {
   transition: 0.5s;
   position: relative;
   min-height: 100vh;
-  background-image: url('../assets/images/banner2.jpg');
+  background-blend-mode: darken;
+  background: url('../assets/images/banner.jpg'), #0000003f;
   background-size: cover;
   background-position: right;
   display: flex;
@@ -77,6 +78,10 @@ header .logo {
 
 header.sticky .logo {
   color: black;
+}
+
+header.sticky .toggle {
+  filter: invert(1);
 }
 
 header ul {
@@ -158,6 +163,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 .btn-cv {
@@ -423,7 +429,11 @@ p {
   color: #999;
 }
 
-.formBx form input[type="submit"] {
+.formBx form input[type="submit"],
+.formBx form input[type="reset"] {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
   max-width: 100px;
   border-radius: 5px;
   background: #008cff;
@@ -431,6 +441,10 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0;
+}
+
+.formBx form input[type="reset"] {
+  background: #ff0062;
 }
 
 .contactInfo {
@@ -465,6 +479,10 @@ p {
   margin-bottom: 0px;
   font-weight: 500;
   color: #2196f3;
+}
+
+#mailTo {
+  opacity: 0;
 }
 
 .copyright {
@@ -539,8 +557,7 @@ p {
     margin: 10px;
   }
 
-  .toggle {
-    filter: invert(1);
+  .toggle {    
     width: 40px;
     height: 40px;
     background: url("../assets/images/menu.png");
@@ -550,7 +567,8 @@ p {
     cursor: pointer;
   }
 
-  .toggle.active {
+  .toggle.active {    
+    filter: invert(1);
     background: url("../assets/images/close.png");
     background-position: center;
     background-repeat: no-repeat;

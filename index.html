@@ -183,17 +183,19 @@
         </div>
       </div>
       <div class="formBx">
-        <form action="https://formsubmit.co/cesarmauricio.arellano@gmail.com" method="POST">
+        <form id="contactForm">
           <h3>Message me</h3>
           <input type="text" placeholder="Full Name" name="name" required>
           <input type="email" placeholder="Email" name="email" required>
           <textarea placeholder="Your Message" name="message" required></textarea>
-          <input type="hidden" name="_subject" value="New Contact Me from Portfolio">
-          <input type="hidden" name="_next" value="https://cesararellano.github.io/Personal-Portfolio/thanks.html">
-          <input type="submit" value="Send">
+          <div class="buttons">
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+          </div>          
         </form>
       </div>
     </div>
+    <a href="" id="mailTo">Hola</a>
   </section>
   <div class="copyright">
     <p>Copyright &copy; 2021 César Arellano. All Right Reserved</p>
