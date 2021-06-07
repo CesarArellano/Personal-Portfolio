@@ -381,6 +381,16 @@ p {
   font-weight: 400;
 }
 
+.centerBox {
+  display: flex;
+  justify-content: center;
+}
+
+.certification-logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
 .contact {
   background: #111;
 }
