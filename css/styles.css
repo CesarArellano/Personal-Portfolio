@@ -350,8 +350,8 @@ p {
 }
 
 .certifications .content .certificationsBx {
-  max-width: calc(50% - 40px);
-  padding: 60px 40px;
+  width: calc(25% - 40px);
+  padding: 40px;
   margin: 20px;
   background-color: #2196f3;
 }
@@ -361,6 +361,11 @@ p {
   font-style: italic;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.certifications .content .certificationsBx .certicateID {
+  font-size: 14px;
 }
 
 .certifications .content .certificationsBx a {
@@ -527,6 +532,17 @@ p {
   background-color: #2196f3;
 }
 
+@media (max-width: 1600px) {
+  .certifications .content .certificationsBx {
+    width: calc(33% - 40px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .certifications .content .certificationsBx {
+    width: calc(50% - 40px);
+  }
+}
 /* Responsive */
 @media (max-width: 991px) {
   header,
@@ -649,7 +665,7 @@ p {
   }
 
   .certifications .content .certificationsBx {
-    max-width: calc(100% - 20px);
+    width: 100%;
     padding: 40px 20px;
     margin: 10px;
   }
